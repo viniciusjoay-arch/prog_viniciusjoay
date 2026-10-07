@@ -9,37 +9,70 @@ Os exercicios do Bloco 3 devolvem DOIS valores: o resultado e a contagem.
 # ---------- Bloco 1: listas e percurso ----------
 
 def conta_negativos(lista):
-    """Quantos numeros da lista sao menores que zero."""
-    pass
+    contador=0
+    for n in lista  if(lista[n]<0):
+        contador = contador + 1
+    return contador
 
 
 def media(lista):
-    """Media dos numeros. Lista vazia devolve 0."""
-    pass
+   resultado=0
+   for n in lista:
+    resultado> resultador + n
+resultado=resultado / len(lista)
+
+    return resultado
+    
 
 
 def sem_o_maior(lista):
-    """Lista NOVA sem o maior valor. Se o maior repete, tira so o primeiro."""
-    pass
+        if not lista:
+        return []
+
+        maior = max(lista)
+        nova = []
+        ja_tirou = False
+
+        for n in lista:
+            if n == maior and not ja_tirou:
+                ja_tirou = True
+            else:
+                nova.append(n)
+        return nova
+    
 
 
 def acumulada(lista):
-    """Lista NOVA onde cada posicao e a soma de tudo ate ali.
-    acumulada([1, 2, 3]) -> [1, 3, 6]"""
-    pass
+    resultado = []
+    soma = 0
+
+        for numero in lista:
+            soma += numero
+                resultado.append(soma)
+
+        return resultado
 
 
 def achata(lista_de_listas):
-    """(Desafio) Junta as sublistas numa lista so.
-    achata([[1, 2], [3]]) -> [1, 2, 3]"""
-    pass
+    resultado = []
+
+    for sublista in lista_de_listas:
+        for elemento in sublista:
+            resultado.append(elemento)
+
+    return resultado
 
 
 # ---------- Bloco 2: busca ----------
 
 def busca_ultima(lista, alvo):
-    """ULTIMA posicao do alvo, ou -1."""
-    pass
+    ultima = -1
+
+    for i in range(len(lista)):
+        if lista[i] == alvo:
+            ultima = i
+
+    return ultima
 
 
 def conta_ocorrencias(lista, alvo):
